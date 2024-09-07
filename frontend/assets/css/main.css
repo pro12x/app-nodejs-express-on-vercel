@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Courier New", serif;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #16161d;
+    color: #efefef;
+}
+
+.form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 3px 0 #efefef;
+        padding: 48px 12px;
+        border-radius: 24px;
+        gap: 12px;
+
+        .form-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .error {
+                background-color: #f8d7da;
+                border: 1px solid #f1aeb5;
+                border-radius: 5px;
+                font-weight: bold;
+                color: #58151c;
+                font-size: 1rem;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+
+        .form-check {
+            padding: 0 !important;
+            display: flex;
+            gap: 7px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+                font-size: 1rem;
+            }
+
+            input {
+                padding: 7px;
+                border: 1px solid #efefef;
+                border-radius: 5px;
+                background-color: #16161d;
+                color: #efefef;
+            }
+
+            button {
+                padding: 7px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(13,110,253);
+                color: #efefef;
+                letter-spacing: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    background-color: #16161d !important;
+
+    .auth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span#username {
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        a span {
+            color: #efefef;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #efefef;
+            margin-right: auto;
+            padding: 10px;
+        }
+    }
+}
+
+.content {
+    margin-bottom: 20px;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .infos {
+        display: flex;
+        gap: 20px;
+    }
+
+    .chart {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card {
+        background-color: #DEF3FF;
+        color: #16161d;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        height: 350px;
+        width: 25%;
+
+        .card-header {
+            border: none !important;
+
+            h5 {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+
+            .level {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                height: 120px;
+                padding: 30px;
+
+                span {
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 12px;
+    }
+
+    .pie-chart, .bar-chart {
+        background-color: #DEF3FF;
+        border-radius: 10px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
